@@ -34,7 +34,7 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "dependencies": {
-    "@effect-ts/core": "^0.25.4",
+    "@effect-ts/core": "^0.25.6",
     "@effect-ts/monocle": "^0.22.0",
     "@effect-ts/morphic": "^0.23.0",
     "@effect-ts/node": "^0.14.0",
