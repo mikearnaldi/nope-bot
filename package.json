@@ -38,7 +38,7 @@
     "@effect-ts/monocle": "^0.22.0",
     "@effect-ts/morphic": "^0.23.0",
     "@effect-ts/node": "^0.14.0",
-    "@effect-ts/tracing-utils": "^0.4.2",
+    "@effect-ts/tracing-utils": "^0.4.3",
     "add": "^2.0.6",
     "fast-check": "^2.13.0",
     "fast-equals": "^2.0.0",
