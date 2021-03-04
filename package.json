@@ -10,7 +10,7 @@
     "start": "ts-node -r isomorphic-fetch src/index.ts"
   },
   "devDependencies": {
-    "@effect-ts/tracing-plugin": "^0.6.0",
+    "@effect-ts/tracing-plugin": "^0.6.1",
     "@types/node": "^14.14.31",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
