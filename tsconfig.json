@@ -7,7 +7,24 @@
       { "transform": "@effect-ts/tracing-plugin" },
       { "transform": "typescript-transform-paths" },
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@effect-ts/core/*": ["node_modules/@effect-ts/core/_src/*"],
+      "@effect-ts/system/*": ["node_modules/@effect-ts/system/_src/*"],
+      "@effect-ts/monocle/*": ["node_modules/@effect-ts/monocle/_src/*"],
+      "@effect-ts/morphic/*": ["node_modules/@effect-ts/morphic/_src/*"],
+      "@effect-ts/jest/*": ["node_modules/@effect-ts/jest/_src/*"],
+      "@effect-ts/query/*": ["node_modules/@effect-ts/query/_src/*"],
+      "@effect-ts/tracing-utils/*": ["node_modules/@effect-ts/tracing-utils/_src/*"],
+      "@effect-ts/core": ["node_modules/@effect-ts/core/_src"],
+      "@effect-ts/system": ["node_modules/@effect-ts/system/_src"],
+      "@effect-ts/monocle": ["node_modules/@effect-ts/monocle/_src"],
+      "@effect-ts/morphic": ["node_modules/@effect-ts/morphic/_src"],
+      "@effect-ts/jest": ["node_modules/@effect-ts/jest/_src"],
+      "@effect-ts/query": ["node_modules/@effect-ts/query/_src"],
+      "@effect-ts/tracing-utils": ["node_modules/@effect-ts/tracing-utils/_src"]
+    }
   },
   "include": ["src/**/*.ts"]
 }

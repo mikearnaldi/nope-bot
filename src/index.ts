@@ -149,9 +149,7 @@ export const getNope = pipe(
   getNopeUrl,
   T.chain(get),
   T.chain(json),
-  T.chain((resp) =>
-    T.fromSync(pipe(D.decode(NopeResponse)(resp), D.report))["|>"](T.orDie)
-  )
+  T.chain((resp) => pipe(resp, D.decode(NopeResponse), D.report)["|>"](T.orDie))
 )
 
 export const NopeResponseEntryOrd = Ord.inverted(
@@ -310,7 +308,7 @@ export const program = pipe(
   T.andThen(loop["|>"](T.repeat(everyMiute)))
 )
 
-export const tickers: TickerSymbol[] = ["SPY", "QQQ"]
+export const tickers: TickerSymbol[] = ["SPY", "QQQ", "TSLA"]
 
 pipe(
   tickers,
