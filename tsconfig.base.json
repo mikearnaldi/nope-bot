@@ -26,12 +26,16 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "target": "ES2018",
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/*"],
       "@app": ["src"]
     },
-    "target": "ES2018"
+    "plugins": [
+      { "transform": "@effect-ts/tracing-plugin" },
+      { "transform": "@zerollup/ts-transform-paths" }
+    ]
   },
   "exclude": ["node_modules", "lib"]
 }

@@ -1,9 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "module": "CommonJS",
     "incremental": true,
-    "tsBuildInfoFile": "tsbuildinfo/main.tsbuildinfo",
-    "noEmit": true
+    "tsBuildInfoFile": "tsbuildinfo/jest.tsbuildinfo"
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }
